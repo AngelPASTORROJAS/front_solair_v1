@@ -1,42 +1,202 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+}
+
+.navigation {
+  margin: 20px;
+  backdrop-filter: blur(2.5px);
+  border-radius: 20px;
+}
+
+.navigateur-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #388ea9;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+}
+.accueil-div {
+  background: url("./assets/images/header.png") center / cover no-repeat,
+    url("./assets/images/fumée.png") center bottom / cover no-repeat;
+  background-blend-mode: screen;
+  width: 100%;
+}
+
+#accueil {
+  /* H1 */
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  /* text-transform: capitalize; */
+  margin: 10% 20%;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+#button-1 {
+  background: #fa6f6f;
+  border: 2px solid #fa6f6f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#button-2 {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.accueil-button {
+  padding-bottom: 30%;
+  padding-top: 3%;
+  text-align: center;
+}
+.vecteur {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.titre1 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.info {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(56, 142, 169, 0.49), rgba(56, 142, 169, 0.49)),
+    url(jo-raymaekers-oPwem6TVI00-unsplash.jpg) center / cover no-repeat,
+    url("./assets/images/fumée.png") center bottom / cover no-repeat no-repeat;
+  background-blend-mode: screen;
+  width: 100%;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0 15em;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7.5px);
+  padding: 20px;
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.titre-description {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  text-transform: capitalize;
+
+  color: #388ea9;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.texte-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #494949;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.description-button {
+  border: 2px solid #fa6f6f;
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #fa6f6f;
+  padding: 10px;
 }
 
-.card {
-  padding: 2em;
+.description {
+  padding: 10em;
 }
 
-.read-the-docs {
-  color: #888;
+.top-villes{
+  padding: 10em;
+}
+.top-villes-titre{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  text-transform: capitalize;
+  
+  color: #388EA9;
+}
+.top-villes-texte{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #494949;
 }
